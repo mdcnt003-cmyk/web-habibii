@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Rifqi Habibi - Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80" tabindex="0">
+
+    <!-- 1. Navigasi -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-dark tracking-tight" href="#beranda">
+                <span class="text-primary me-1">&lt;/&gt;</span> Rifqi Habibi
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#proyek">Proyek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#tentang">Tentang</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
+                    <button id="themeToggle" class="btn btn-theme-toggle rounded-circle p-2 d-flex align-items-center justify-content-center" type="button" aria-label="Ganti mode tema">
+                        <i id="themeIcon" class="bi bi-moon-stars-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Bagian Pembuka (Hero Section) -->
+    <header id="beranda" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center justify-content-between gy-4">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <div class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill mb-3 fw-semibold">
+                        Web Developer &amp; Informatics Student
+                    </div>
+                    <h1 class="display-4 fw-bold text-dark lh-tight mb-3">
+                        Membangun Solusi Digital yang Bersih &amp; Terstruktur
+                    </h1>
+                    <p class="lead text-secondary mb-4 col-lg-10 ps-0">
+                        Halo, saya Muhammad Rifqi Habibi. Fokus mengembangkan antarmuka web modern, responsif, dan mudah digunakan dengan sentuhan desain minimalis.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+                        <a href="#proyek" class="btn btn-primary btn-lg px-4 py-2 rounded-pill fw-semibold shadow-sm">
+                            Lihat Karya <i class="bi bi-arrow-right ms-1"></i>
+                        </a>
+                        <a href="#tentang" class="btn btn-outline-secondary btn-lg px-4 py-2 rounded-pill fw-medium">
+                            Tentang Saya
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="hero-image-wrapper p-3 bg-light rounded-4 border mx-auto">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&auto=format&fit=crop&q=80" alt="Workspace Developer" class="img-fluid rounded-3 shadow-sm hero-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. Tiga Card (Bagian Proyek / Portofolio) -->
+    <section id="proyek" class="py-5 bg-light-subtle border-top border-bottom">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <p class="text-uppercase text-primary fw-bold small tracking-wider mb-2">Portofolio Pilihan</p>
+                <h2 class="fw-bold text-dark">Proyek Terbaru</h2>
+                <p class="text-secondary mx-auto col-md-6">Eksplorasi pembuatan aplikasi berbasis web yang menitikberatkan pada kesederhanaan, performa, dan kegunaan.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-hover">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&auto=format&fit=crop&q=80" class="card-img-top card-img-custom" alt="Desain Web Portfolio">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <span class="badge bg-secondary-subtle text-secondary-emphasis w-auto align-self-start mb-2 px-2 py-1 rounded">Web Design</span>
+                            <h5 class="card-title fw-bold text-dark mt-1">Minimalist Portfolio UI</h5>
+                            <p class="card-text text-secondary flex-grow-1">
+                                Perancangan antarmuka situs personal modern berorientasi user-centric dengan skema warna netral dan navigasi intuitif.
+                            </p>
+                            <a href="#proyek" class="text-decoration-none fw-semibold text-primary mt-3 d-inline-flex align-items-center">
+                                Detail Proyek <i class="bi bi-chevron-right ms-1 small"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-hover">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=80" class="card-img-top card-img-custom" alt="Dashboard Analitik">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <span class="badge bg-secondary-subtle text-secondary-emphasis w-auto align-self-start mb-2 px-2 py-1 rounded">Dashboard</span>
+                            <h5 class="card-title fw-bold text-dark mt-1">Analytics Dashboard</h5>
+                            <p class="card-text text-secondary flex-grow-1">
+                                Panel kontrol visualisasi data responsif dengan integrasi chart interaktif untuk pelaporan metrik kinerja sistem secara real-time.
+                            </p>
+                            <a href="#proyek" class="text-decoration-none fw-semibold text-primary mt-3 d-inline-flex align-items-center">
+                                Detail Proyek <i class="bi bi-chevron-right ms-1 small"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-hover">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&auto=format&fit=crop&q=80" class="card-img-top card-img-custom" alt="Sistem Manajemen API">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <span class="badge bg-secondary-subtle text-secondary-emphasis w-auto align-self-start mb-2 px-2 py-1 rounded">Backend &amp; API</span>
+                            <h5 class="card-title fw-bold text-dark mt-1">RESTful API Engine</h5>
+                            <p class="card-text text-secondary flex-grow-1">
+                                Arsitektur layanan backend modular dan aman, mendukung otentikasi berbasis token dan manajemen data terstruktur.
+                            </p>
+                            <a href="#proyek" class="text-decoration-none fw-semibold text-primary mt-3 d-inline-flex align-items-center">
+                                Detail Proyek <i class="bi bi-chevron-right ms-1 small"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Tentang Singkat -->
+    <section id="tentang" class="py-5">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold text-dark mb-3">Tentang Saya</h2>
+                    <p class="text-secondary lead mb-4">
+                        Mahasiswa Teknik Informatika yang antusias terhadap teknologi web, pemecahan masalah logis, dan desain visual yang ergonomis. Senang belajar teknologi baru dan berkolaborasi dalam proyek software.
+                    </p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <span class="badge bg-light text-dark border p-2 px-3 rounded-pill fw-medium"><i class="bi bi-code-slash me-1 text-primary"></i> HTML &amp; CSS</span>
+                        <span class="badge bg-light text-dark border p-2 px-3 rounded-pill fw-medium"><i class="bi bi-bootstrap me-1 text-primary"></i> Bootstrap 5</span>
+                        <span class="badge bg-light text-dark border p-2 px-3 rounded-pill fw-medium"><i class="bi bi-filetype-js me-1 text-primary"></i> JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Footer -->
+    <footer class="bg-dark text-white py-4 border-top">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <div class="col-md-6 text-center text-md-start">
+                    <h5 class="fw-bold mb-1">Muhammad Rifqi Habibi</h5>
+                    <p class="text-secondary mb-0 small">NIM: <span class="text-light fw-medium">2511102441091</span></p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="text-secondary mb-0 small">&copy; 2026 Web Muhammad Rifqi Habibi. Dibuat dengan Bootstrap 5.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Dark Mode Script -->
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const htmlElement = document.documentElement;
+
+        const getPreferredTheme = () => {
+            const stored = localStorage.getItem('theme');
+            if (stored) return stored;
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+
+        const setTheme = (theme) => {
+            htmlElement.setAttribute('data-bs-theme', theme);
+            localStorage.setItem('theme', theme);
+
+            if (theme === 'dark') {
+                themeIcon.classList.replace('bi-moon-stars-fill', 'bi-sun-fill');
+            } else {
+                themeIcon.classList.replace('bi-sun-fill', 'bi-moon-stars-fill');
+            }
+        };
+
+        // Inisialisasi tema
+        setTheme(getPreferredTheme());
+
+        // Event listener toggle
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-bs-theme') || 'light';
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            setTheme(newTheme);
+        });
+    </script>
+</body>
+</html>
